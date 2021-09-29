@@ -17,7 +17,7 @@ protocol Bird {
     var canFly: Bool { get }
     var canSwim: Bool { get }
     var canSing: Bool { get }
-    var canRun: Bool { get }
+    var canRun: Bool { get } //when to write init method
     
 }
 extension Bird {
