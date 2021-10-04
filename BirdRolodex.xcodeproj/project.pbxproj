@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D81B5254270242B800407F71 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81B5253270242B800407F71 /* ViewModel.swift */; };
+		D8A97BD7270A046F00F6A8B5 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BD6270A046F00F6A8B5 /* DBHelper.swift */; };
+		D8A97BD9270A04E600F6A8B5 /* BirdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BD8270A04E600F6A8B5 /* BirdListViewController.swift */; };
+		D8A97BDB270A06A200F6A8B5 /* BirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BDA270A06A200F6A8B5 /* BirdTableViewCell.swift */; };
+		D8A97BDD270A0EEA00F6A8B5 /* BirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BDC270A0EEA00F6A8B5 /* BirdDetailViewController.swift */; };
 		D8B181F32701EDF500717C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F22701EDF500717C18 /* AppDelegate.swift */; };
 		D8B181F52701EDF500717C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F42701EDF500717C18 /* SceneDelegate.swift */; };
 		D8B181F72701EDF500717C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F62701EDF500717C18 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		D81B5253270242B800407F71 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8A97BD6270A046F00F6A8B5 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		D8A97BD8270A04E600F6A8B5 /* BirdListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdListViewController.swift; sourceTree = "<group>"; };
+		D8A97BDA270A06A200F6A8B5 /* BirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTableViewCell.swift; sourceTree = "<group>"; };
+		D8A97BDC270A0EEA00F6A8B5 /* BirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailViewController.swift; sourceTree = "<group>"; };
 		D8B181EF2701EDF500717C18 /* BirdRolodex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdRolodex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B181F22701EDF500717C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B181F42701EDF500717C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 				D8B181FB2701EDF800717C18 /* Assets.xcassets */,
 				D8B181FD2701EDF800717C18 /* LaunchScreen.storyboard */,
 				D8B182002701EDF800717C18 /* Info.plist */,
+				D8A97BD6270A046F00F6A8B5 /* DBHelper.swift */,
+				D8A97BD8270A04E600F6A8B5 /* BirdListViewController.swift */,
+				D8A97BDA270A06A200F6A8B5 /* BirdTableViewCell.swift */,
+				D8A97BDC270A0EEA00F6A8B5 /* BirdDetailViewController.swift */,
 			);
 			path = BirdRolodex;
 			sourceTree = "<group>";
@@ -141,7 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B181F72701EDF500717C18 /* ViewController.swift in Sources */,
+				D8A97BD9270A04E600F6A8B5 /* BirdListViewController.swift in Sources */,
+				D8A97BDB270A06A200F6A8B5 /* BirdTableViewCell.swift in Sources */,
 				D8B181F32701EDF500717C18 /* AppDelegate.swift in Sources */,
+				D8A97BDD270A0EEA00F6A8B5 /* BirdDetailViewController.swift in Sources */,
+				D8A97BD7270A046F00F6A8B5 /* DBHelper.swift in Sources */,
 				D81B5254270242B800407F71 /* ViewModel.swift in Sources */,
 				D8B181F52701EDF500717C18 /* SceneDelegate.swift in Sources */,
 			);

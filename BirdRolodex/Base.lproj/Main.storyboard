@@ -1,86 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A83-r0-ltL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="TUC-pt-jXx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirdRolodex" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="axw-96-0bo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bnB-gO-EwS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TaG-az-GPe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDx-ER-DXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="78"/>
+        </scene>
+        <!--Bird List View Controller-->
+        <scene sceneID="Y3E-i6-h8V">
+            <objects>
+                <viewController storyboardIdentifier="BirdListViewController" id="egq-Yl-n5V" customClass="BirdListViewController" customModule="BirdRolodex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B48-n3-JZK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JI9-1d-1Rz">
-                                <rect key="frame" x="137" y="173" width="120" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Tiv-Oy-Kq5"/>
-                                    <constraint firstAttribute="width" constant="120" id="qEV-7a-pwq"/>
-                                </constraints>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-eh-ySK">
-                                <rect key="frame" x="265" y="175" width="57" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U7G-Md-LoS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="kdR-eh-ySK" secondAttribute="height" multiplier="8:5" constant="9" id="ImT-dd-Pg8"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="6" height="6"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bird Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-yZ-Uv8">
-                                <rect key="frame" x="137" y="232" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bird Ability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11e-Hc-p9b">
-                                <rect key="frame" x="137" y="280" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BirdTableCell" id="nnf-Fz-QCs" customClass="BirdTableViewCell" customModule="BirdRolodex" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnf-Fz-QCs" id="UNT-KR-dzo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT2-b8-8ea">
+                                                    <rect key="frame" x="28" y="19" width="378" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rT2-b8-8ea" secondAttribute="trailing" constant="8" id="0u8-ly-NE7"/>
+                                                <constraint firstItem="rT2-b8-8ea" firstAttribute="leading" secondItem="UNT-KR-dzo" secondAttribute="leadingMargin" constant="8" id="IxV-rj-158"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rT2-b8-8ea" secondAttribute="bottom" constant="8" id="ZAq-gc-Asn"/>
+                                                <constraint firstItem="rT2-b8-8ea" firstAttribute="top" secondItem="UNT-KR-dzo" secondAttribute="topMargin" constant="8" id="jP6-vI-iF8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="birdName" destination="rT2-b8-8ea" id="H0R-2A-s4o"/>
+                                            <segue destination="Rah-Wh-Dzy" kind="show" id="AZe-QY-r7O"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="egq-Yl-n5V" id="arb-xr-3k8"/>
+                                    <outlet property="delegate" destination="egq-Yl-n5V" id="Qz1-o9-wF2"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="h9H-jB-IVH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="11e-Hc-p9b" firstAttribute="top" secondItem="kdR-eh-ySK" secondAttribute="bottom" constant="75" id="37Y-JH-o3S"/>
-                            <constraint firstItem="11e-Hc-p9b" firstAttribute="leading" secondItem="JI9-1d-1Rz" secondAttribute="leading" id="Bhb-NX-Fjn"/>
-                            <constraint firstItem="kdR-eh-ySK" firstAttribute="width" secondItem="kdR-eh-ySK" secondAttribute="height" multiplier="8:5" constant="9" id="Fwh-e1-cAz"/>
-                            <constraint firstItem="hTJ-yZ-Uv8" firstAttribute="top" secondItem="JI9-1d-1Rz" secondAttribute="bottom" constant="25" id="MIA-c0-J7m"/>
-                            <constraint firstItem="JI9-1d-1Rz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="O48-nq-Lfj"/>
-                            <constraint firstItem="kdR-eh-ySK" firstAttribute="leading" secondItem="JI9-1d-1Rz" secondAttribute="trailing" constant="8" id="hXy-iM-aAe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdR-eh-ySK" secondAttribute="trailing" constant="92" id="mwZ-ID-Dbc"/>
-                            <constraint firstItem="kdR-eh-ySK" firstAttribute="leading" secondItem="JI9-1d-1Rz" secondAttribute="trailing" constant="8" symbolic="YES" id="o7U-de-j5Y"/>
-                            <constraint firstItem="hTJ-yZ-Uv8" firstAttribute="leading" secondItem="JI9-1d-1Rz" secondAttribute="leading" id="ozu-tw-hMR"/>
-                            <constraint firstItem="JI9-1d-1Rz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="wXG-PQ-RvK"/>
-                            <constraint firstItem="kdR-eh-ySK" firstAttribute="leading" secondItem="JI9-1d-1Rz" secondAttribute="trailing" constant="8" id="weD-cI-KQk"/>
-                            <constraint firstItem="JI9-1d-1Rz" firstAttribute="centerY" secondItem="kdR-eh-ySK" secondAttribute="centerY" id="xEj-pM-5Hh"/>
+                            <constraint firstItem="h9H-jB-IVH" firstAttribute="bottom" secondItem="U7G-Md-LoS" secondAttribute="bottom" id="GGp-YA-JCL"/>
+                            <constraint firstItem="h9H-jB-IVH" firstAttribute="trailing" secondItem="U7G-Md-LoS" secondAttribute="trailing" id="Xjp-no-LnM"/>
+                            <constraint firstItem="U7G-Md-LoS" firstAttribute="top" secondItem="h9H-jB-IVH" secondAttribute="top" id="enC-HA-dnj"/>
+                            <constraint firstItem="U7G-Md-LoS" firstAttribute="leading" secondItem="h9H-jB-IVH" secondAttribute="leading" id="woW-vH-QRB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LjV-mY-5Nh"/>
+                    <connections>
+                        <outlet property="birdTable" destination="U7G-Md-LoS" id="hT1-8Z-jzB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g60-F8-W6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="79"/>
+            <point key="canvasLocation" x="160.86956521739131" y="78.348214285714278"/>
+        </scene>
+        <!--Bird Detail View Controller-->
+        <scene sceneID="njc-w3-fkt">
+            <objects>
+                <viewController storyboardIdentifier="BirdDetailViewController" id="Rah-Wh-Dzy" customClass="BirdDetailViewController" customModule="BirdRolodex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C1z-PV-oMi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="6EN-zo-gh1">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rHR-kE-pNB"/>
+                                    <constraint firstAttribute="height" constant="100" id="z6Z-Lf-6DT"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BVg-6z-Vry"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6EN-zo-gh1" firstAttribute="centerX" secondItem="C1z-PV-oMi" secondAttribute="centerX" id="Iwo-Zf-UfM"/>
+                            <constraint firstItem="6EN-zo-gh1" firstAttribute="centerY" secondItem="C1z-PV-oMi" secondAttribute="centerY" id="xNc-e2-ReY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uTt-Sw-RLm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ll1-Bs-PBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T35-zv-A7S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A83-r0-ltL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O8v-pz-IOu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egq-Yl-n5V" kind="relationship" relationship="rootViewController" id="w63-Vy-SaX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nz-2T-jHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-749.27536231884062" y="78.348214285714278"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
