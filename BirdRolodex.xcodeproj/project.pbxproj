@@ -12,6 +12,10 @@
 		D8A97BD9270A04E600F6A8B5 /* BirdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BD8270A04E600F6A8B5 /* BirdListViewController.swift */; };
 		D8A97BDB270A06A200F6A8B5 /* BirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BDA270A06A200F6A8B5 /* BirdTableViewCell.swift */; };
 		D8A97BDD270A0EEA00F6A8B5 /* BirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A97BDC270A0EEA00F6A8B5 /* BirdDetailViewController.swift */; };
+		D8A97BDF270E4B8500F6A8B5 /* 59858041-480px.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8A97BDE270E4B8400F6A8B5 /* 59858041-480px.jpeg */; };
+		D8A97BE1270E68A900F6A8B5 /* pigeon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8A97BE0270E68A900F6A8B5 /* pigeon.jpeg */; };
+		D8A97BE3270F2A9000F6A8B5 /* parrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8A97BE2270F2A8F00F6A8B5 /* parrot.jpg */; };
+		D8A97BE5270F2AB500F6A8B5 /* peacock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8A97BE4270F2AB500F6A8B5 /* peacock.jpg */; };
 		D8B181F32701EDF500717C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F22701EDF500717C18 /* AppDelegate.swift */; };
 		D8B181F52701EDF500717C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F42701EDF500717C18 /* SceneDelegate.swift */; };
 		D8B181F72701EDF500717C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B181F62701EDF500717C18 /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 		D8A97BD8270A04E600F6A8B5 /* BirdListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdListViewController.swift; sourceTree = "<group>"; };
 		D8A97BDA270A06A200F6A8B5 /* BirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTableViewCell.swift; sourceTree = "<group>"; };
 		D8A97BDC270A0EEA00F6A8B5 /* BirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDetailViewController.swift; sourceTree = "<group>"; };
+		D8A97BDE270E4B8400F6A8B5 /* 59858041-480px.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "59858041-480px.jpeg"; path = "../../../Downloads/59858041-480px.jpeg"; sourceTree = "<group>"; };
+		D8A97BE0270E68A900F6A8B5 /* pigeon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pigeon.jpeg; path = ../../../Downloads/pigeon.jpeg; sourceTree = "<group>"; };
+		D8A97BE2270F2A8F00F6A8B5 /* parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = parrot.jpg; path = ../../../Downloads/parrot.jpg; sourceTree = "<group>"; };
+		D8A97BE4270F2AB500F6A8B5 /* peacock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = peacock.jpg; path = ../../../Downloads/peacock.jpg; sourceTree = "<group>"; };
 		D8B181EF2701EDF500717C18 /* BirdRolodex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdRolodex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B181F22701EDF500717C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B181F42701EDF500717C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 		D8B181F12701EDF500717C18 /* BirdRolodex */ = {
 			isa = PBXGroup;
 			children = (
+				D8A97BE4270F2AB500F6A8B5 /* peacock.jpg */,
+				D8A97BE2270F2A8F00F6A8B5 /* parrot.jpg */,
+				D8A97BE0270E68A900F6A8B5 /* pigeon.jpeg */,
+				D8A97BDE270E4B8400F6A8B5 /* 59858041-480px.jpeg */,
 				D8B181F22701EDF500717C18 /* AppDelegate.swift */,
 				D8B181F42701EDF500717C18 /* SceneDelegate.swift */,
 				D8B181F62701EDF500717C18 /* ViewController.swift */,
@@ -139,9 +151,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A97BDF270E4B8500F6A8B5 /* 59858041-480px.jpeg in Resources */,
 				D8B181FF2701EDF800717C18 /* LaunchScreen.storyboard in Resources */,
 				D8B181FC2701EDF800717C18 /* Assets.xcassets in Resources */,
+				D8A97BE1270E68A900F6A8B5 /* pigeon.jpeg in Resources */,
 				D8B181FA2701EDF500717C18 /* Main.storyboard in Resources */,
+				D8A97BE5270F2AB500F6A8B5 /* peacock.jpg in Resources */,
+				D8A97BE3270F2A9000F6A8B5 /* parrot.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

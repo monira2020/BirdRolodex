@@ -11,19 +11,22 @@ class BirdListViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var birdTable: UITableView!
                 
-        var db:DBHelper = DBHelper()
-        
+        var dbBird:DBHelperBird = DBHelperBird()
+        var dbAbility:DBHelperAbility = DBHelperAbility()
         var birds:[BirdModel] = []
         
         override func viewDidLoad() {
             super.viewDidLoad()
-//            db.deleteRow()
-            db.insert(id: 1, name: "crow")
-            db.insert(id: 2, name: "pigeon")
-            db.insert(id: 3, name: "parrot")
-            db.insert(id: 4, name: "peacock")
+            dbBird.deleteRow(row: 1)
+            dbBird.deleteRow(row: 2)
+            dbBird.deleteRow(row: 3)
+            dbBird.deleteRow(row: 4)
+            dbBird.insert(id: 1, name: "crow", imageURL: "59858041-480px.jpeg", birdDescription: "", abilityIds: "1,2")
+            dbBird.insert(id: 2, name: "pigeon", imageURL: "pigeon.jpeg", birdDescription: "", abilityIds: "1,2")
+            dbBird.insert(id: 3, name: "parrot", imageURL: "parrot.jpg", birdDescription: "", abilityIds: "1,2")
+            dbBird.insert(id: 4, name: "peacock", imageURL: "peacock.jpg", birdDescription: "", abilityIds: "1,2")
             
-            birds = db.read()
+            birds = dbBird.read()
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -34,7 +37,9 @@ class BirdListViewController: UIViewController, UITableViewDataSource, UITableVi
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "BirdTableCell", for: indexPath) as? BirdTableViewCell
-            cell?.birdName?.text = "Name: " + birds[indexPath.row].name
+            cell?.birdName?.textAlignment = .right
+            cell?.birdName?.text = birds[indexPath.row].name
+            cell?.imageView!.image = UIImage(named: "\(birds[indexPath.row].imageURL)")
             cell?.accessoryType = .disclosureIndicator
             return cell ?? UITableViewCell()
         }
